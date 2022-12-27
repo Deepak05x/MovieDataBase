@@ -21,7 +21,7 @@ function Homepage() {
   return (
     <main className="main">
         <div className="all-movies">
-            {movies.length> 0 ? (
+            {movies && movies.length> 0 ? (
                 movies.map((movie,index)=>{
                     return <Eachmovie key={movie.id}
                     movie = {movie}/>
