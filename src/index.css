@@ -31,7 +31,7 @@ p {
 }
 
 .header{
-  width:100%;
+ min-width:100rem;
   height:6rem;
   background-color: var(--primary-color);
   padding:2rem 4rem;
@@ -79,4 +79,32 @@ p {
 
 .movie-info-date{
   font-weight: 600;
+}
+
+/* responsive media queries*/
+
+@media only screen and (max-width: 69em){
+    html{
+      font-size: 55%;
+    }
+
+}
+
+@media only screen and (max-width:59em){
+  .all-movies{
+    grid-template-columns: repeat(2,1fr);
+    width:80%;
+    margin:0 auto;
+  }
+
+}
+
+@media only screen and (max-width:27em){
+  .all-movies{
+    grid-template-columns: 1fr;
+
+  }
+  .movie-img{
+    width:100%;
+  }
 }
